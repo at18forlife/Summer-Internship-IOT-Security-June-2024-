@@ -16,7 +16,7 @@ class BlockchainApp:
         # Initialize Firebase
         cred = credentials.Certificate('credentials.json')
         firebase_admin.initialize_app(cred, {
-            'databaseURL': 'https://metadata-2bce6-default-rtdb.asia-southeast1.firebasedatabase.app'
+            'databaseURL': '' //url to you firebase database
         })
         self.ref = db.reference('metadata')
 
